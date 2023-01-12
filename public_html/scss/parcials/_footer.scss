@@ -10,7 +10,7 @@ footer{
         padding-left: 0;
         margin-bottom: 30px;
         //da bi odvojila paragraf
-        li{
+      
             a{
                 display: block;
                 padding: 5px 0;
@@ -19,14 +19,14 @@ footer{
                 font-family: $footer-font;
                 font-weight: $font-bold;
                 font-size: 1.8rem;
+                
                 &:hover,
                     &.active{
-                    color: $footer-link-hover;
+                    color: lighten(complement($footer-bg),15%);
                 }
             }
             //a end
-        }
-        //li end
+      
     }
     //ul end
     .copyright{
