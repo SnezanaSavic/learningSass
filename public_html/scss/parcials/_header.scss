@@ -1,27 +1,27 @@
-$header-bg : $purple;
-$header-link-color : $white;
+$header-bg: $purple;
+$header-link-color:$white;
 $nav-font: $josefin;
 $nav-link-hover: $green;
+
 
 header{
     padding: 30px 0;
     background-color: $header-bg;
-
+    
     .branding{
         text-align: center;
+        
         a{
             color: $header-link-color;
         }
     }
-
+    
     nav{
         ul{
             list-style: none;
-            padding-left: 0;
-
-            li{
+            padding-left: 0;          
+            li{                
                 a{
-
                     display: block;
                     padding: 5px 0;
                     color: $header-link-color;
@@ -29,73 +29,55 @@ header{
                     font-family: $nav-font;
                     text-transform: uppercase;
                     font-weight: $font-bold;
-
+                    
                     &:hover,
-                        &.active{
+                    &.active{
                         color: $nav-link-hover;
                     }
+                } //a end  
+            }  //li end       
+        }//ul end  
+    }  // nav end
+}// header end
 
-                }
-                //a end
-
-            }
-            //li end
-        }
-        //ul end
-    }
-    //nav end
-
-}
-//heder end
 
 @media(min-width:768px){
+    
     header{
+        
         .container{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
             nav{
-
                 ul{
                     display: flex;
+                    
                     li{
                         a{
-                            padding: 5px ;
+                            padding: 5px;
                         }
                     }
-                }
-                //ul end
+                }// ul end
+                
+                
+            } //nav end
+        }// .container end
+        
+    }// end header
+}
 
+
+@media(min-width:992px){
+    
+    header{
+        
+        nav{
+            a{
+                padding: 5px 15px !important;
             }
-            //nav end
         }
-        //container end
-
-
-    }
-    //end heder
-    @media(min-width:992px){
-        header{
-            .container{
-                nav{
-
-                    ul{
-
-                        li{
-                            a{
-                                padding: 5px 15px ;
-                            }
-                        }
-                    }
-                    //ul end
-
-                }
-                //nav end
-            }
-            //container end
-
-
-        }
-        //end heder
-    }
-
+        
+    }// end header
+}
