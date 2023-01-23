@@ -1,17 +1,20 @@
 
 
-$white : #fff;
+$white : #ffffff;
 $black : #000000;
-$purple : #e834eb;
-$red : #c9140e;
-$blue: #c9140e;
-$green:#72e028;
-$orange:#c9590e;
-$yellow:#e0da28;
-$cyan: #28cbe0;
+$purple: #8a059e;
+$red:    #f00008;
+$blue:   #0e15cc;
+$green:  #18b304;
+$orange: #f77a05;
+$yellow: #e0cb09;
+$cyan:   #09e0b1;
 
 
-$light-gray : #eeeeee;
-$dark-gray: #444444;
 
-$enable-radius : true; // boolean
+
+$light-gray: #eeeeee;
+$dark-gray:  #444444;
+
+
+$enable-radius : false;  // boolean
